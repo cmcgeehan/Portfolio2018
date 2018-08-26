@@ -1,79 +1,189 @@
 h1, h2, h3, h4, h5, h6, p {
-	color: white;
+
 }
 
-h1, h6 {
+h1, h3, h6 {
 	font-family: montserrat;
+}
+
+h5, p {
+	font-family: "Source Sans Pro";
+	font-weight: normal;
 }
 
 h1 {
 	font-weight: lighter;
-	font-size: 64px;
+	font-size: 56px;
+}
+
+h3 {
+	font-size: 36px;
+	font-weight: 500;
+	margin-top: 0px;
+	margin-bottom: 0px;
+}
+
+h4 {
+	font-family: Roboto;
+	font-weight: 700;
+	font-size: 80px;
+	margin-bottom: 0px;
+}
+
+h5 {
+	font-size: 24px;
 }
 
 h6 {
-	font-weight: bolder;
+	font-size: 24px;
+	font-weight: 500;
+	margin: 0px;
 }
 
 p {
-	font-family: "Source Sans Pro";
 	font-size: 18px;
 }
 
-#nav ul li a {
-	height: 12px;
-	width: 12px;
-	border-radius: 100%;
-	background-color: white;
+body {
+	background-repeat: no-repeat;
+	margin-top: 0px;
 }
 
-a.active {
-
-}
-
-#sidebar {
-	position: fixed;
-	width: 5vw;
-	height: 100vh;
-	float: left;
-	text-align: center;
-	outline-width: 1px;
-	outline-style:solid;
-	outline-color:black;
-}
 
 #section {
-	background-repeat: no-repeat;
-	background-position: right;
-	background-size: cover;
 	height: 100vh;
 	width: 100vw;
+	/* Testing
 	outline-width: 1px;
 	outline-style: solid;
 	outline-color: black;
-	float: right;
+	*/
+	margin-left: 0VW;
+	/* Note: the backgrounds currently don't scale appropriately with the rest of the screen */
+	background-size: contain;
+	background-repeat: no-repeat;
 }
 
-#parent {
+#sectionText {
+	text-align: center;
+}
+
+#button {
+	border: none;
+	text-align: center;
+	width: 200px;
+	height: 50px;
 	display: table;
-	float: right;
-	width: 30vw;
-	margin-right: 20vw;
+	border-radius: 0px;
 }
 
-#textBox {
-	display: table-cell;
-	vertical-align: middle;
+.myself {
+	left: 0px;
+	top: 0px;
+}
+
+.mainText {
+	padding-top: 30vh;
+	margin-left: 45vw;
+	width: 45vw;
+	height: 100vh;
+	text-align: left;
 }
 
 .libellum {
-	background-image: url("Images/libellum_bw.png");
+	background-color: #232529;
+	background-image: linear-gradient(60deg, #232529, #393E44);
+	background-size: cover;
+}
+
+.laptopImg {
+	width: 600px;
+	height: 55vh;
+	margin-left: 35vw;
+	margin-right: 0vw;
+	background-image: url("Images/laptopImg.png");
+	background-repeat: no-repeat;
+	background-size: contain;
+	background-position: bottom center;
+}
+
+.libText {
+	margin-top: 10vh;
+	margin-left: 5vw;
+	padding-top: 60px;
+	height: 200px;
+	width: 350px;
+	background-image: url("Images/logoDarkLight.png");
+	background-size: contain;
+	background-position: top center;
+	background-repeat: no-repeat;
+	color: #CECECE;
+}
+
+.libButton {
+	color: #232529;
+	background-color: #0FB686;
+	margin-left: 75px;
 }
 
 .industrial {
-	background-image: url("Images/industrial_bw.png");
+	background-image: url("Images/speakerFinal.jpg");
+}
+
+.indText {
+	color: #232529;
+	width: 500px;
+	height: 200px;
+	float: right;
+	padding-top: 72vh;
+	padding-right: 10px;
+}
+
+.indButton {
+	background-color: #FF5080;
+	margin-left: 150px;
 }
 
 .disc {
-	background-image: url("Images/discBackground.png");
+	background-color: #52B6B9;
+	background-image: linear-gradient(90deg, #52B6B9, #73F0C0);
+	background-size: cover;
+	margin-top: 0vh;
 }
+
+.discLogo {
+	background-image: url("Images/Copy of Logo whitescale.png");
+	background-size: contain;
+	background-repeat: no-repeat;
+	background-position: center;
+	width: 450px;
+	height: 300px;
+	margin-left: 5vw;
+}
+
+.discText {
+	padding-top: 10vh;
+	margin-left: 45vw;
+	height: 300px;
+	width: 500px;
+	color: #000000;
+}
+
+.discButton {
+	background-color: rgb(229,244,241);
+	color: #000000;
+	margin-left: 150px;
+}
+
+.prodDsgn {
+
+}
+
+
+
+
+
+
+
+
+
