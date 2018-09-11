@@ -64,7 +64,6 @@ a {
 	*/
 	margin-left: 0VW;
 	/* Note: the backgrounds currently don't scale appropriately with the rest of the screen */
-	background-size: contain;
 	background-repeat: no-repeat;
 }
 /*
@@ -148,7 +147,8 @@ a {
 }
 
 .industrial {
-	background-image: url("Images/speakerFinal.jpg");
+	background-image: url("Images/speakerFinal.png");
+	background-size: contain;
 }
 
 .indText {
@@ -162,7 +162,7 @@ a {
 
 .indButton {
 	background-color: #FF5080;
-	margin-left: 150px;
+	margin-left: 106px;
 }
 
 .indButton:hover,
@@ -189,8 +189,8 @@ a {
 }
 
 .discText {
-	padding-top: 10vh;
-	margin-left: 45vw;
+	padding-top: 15vh;
+	margin-left: 50vw;
 	height: 300px;
 	width: 500px;
 	color: #000000;
@@ -209,10 +209,60 @@ a {
 }
 
 .dsgn308 {
-	background-image: ("Images/dsgn308.JPG");
+	background-image: url("Images/dsgn308.JPG");
 	background-size: cover;
 	margin-top: 0vh;
 }
+
+.prodDsgnText {
+	padding-top: 10vh;
+	margin-right: 30px;
+	height: 300px;
+	width: 450px;
+	color: #FFEC00;
+	float: right;
+}
+
+.prodDsgnButton {
+	background-color: #FFEC00;
+	color: #000000;
+	margin-left: 106px;
+}
+
+.prodDsgnButton:hover,
+.prodDsgnButton:focus {
+  box-shadow: 0 0.5em 0.5em -0.4em var(--hover);
+  transform: translateY(-0.25em);
+}
+
+
+
+  /* DSGN 320 Page */
+
+
+#sectionHeadImg {
+	height: 100vh;
+	width: 100vw;
+}
+
+.Dsgn320 {
+	background-image: url("Images/speakerFinalHalf.jpg");
+	background-size: contain;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
