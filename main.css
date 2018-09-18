@@ -1,5 +1,9 @@
-h1, h2, h3, h4, h5, h6, p {
+html {
+	scroll-behavior: smooth;
+}
 
+h1, h2, h3, h4, h5, h6, p {
+	-webkit-font-smoothing: antialiased;
 }
 
 h1, h3, h6 {
@@ -54,15 +58,64 @@ a {
 	margin: 0px;
 }
 
-#section {
-	height: 100vh;
-	width: 100vw;
+a.small {
+	font-size: 14px;
+}
+
+#topBar {
+	display: table;
+	top: 0;
+	left: 0;
+	position: fixed;
+	margin-top: 0;
+	height: 35px;
+	background-color: white;
+	margin-bottom: 0;
+}
+
+.leftBar {
+	display: inline-block;
+	width: 35vw;
+}
+
+.rightBar {
+	right: 0;
+	width: 65vw;
+	float: right;
+}
+
+/*
+#socialLinks li  {
+	float: right;
+}
+*/
+
+ul {
+	list-style: none;
+	top: 0;
+	height: 33px;
+	margin-top: 5px;
+	margin-bottom: 5px;
+	line-height: 33px;
+	padding-right: 40px;
+}
+
+li {
+	display: inline;
+	padding-right: 25px;
+}
+
+.section {
+	height: 724px;
+	width: 80vw;
 	/* Testing
 	outline-width: 1px;
 	outline-style: solid;
 	outline-color: black;
 	*/
-	margin-left: 0VW;
+	margin-left: 10vw;
+	margin-top: 10vh;
+	margin-bottom: 10vh;
 	/* Note: the backgrounds currently don't scale appropriately with the rest of the screen */
 	background-repeat: no-repeat;
 }
@@ -91,7 +144,7 @@ a {
 	border-radius: 0px;
 }
 
-.myself {
+#myself {
 	left: 0px;
 	top: 0px;
 }
@@ -99,34 +152,33 @@ a {
 .mainText {
 	padding-top: 30vh;
 	margin-left: 45vw;
-	width: 45vw;
+	width: 35vw;
 	height: 100vh;
 	text-align: left;
 }
 
-.libellum {
+#libellum {
 	background-color: #232529;
 	background-image: linear-gradient(60deg, #232529, #393E44);
 	background-size: cover;
 }
 
 .laptopImg {
-	width: 600px;
-	height: 55vh;
+	width: 750px;
+	height: 400px;
 	margin-left: 35vw;
-	margin-right: 0vw;
 	background-image: url("Images/laptopImg.png");
 	background-repeat: no-repeat;
-	background-size: contain;
+	background-size: 75%;
 	background-position: bottom center;
 }
 
 .libText {
-	margin-top: 10vh;
-	margin-left: 5vw;
+	margin-top: 25px;
+	margin-left: 10vw;
 	padding-top: 60px;
 	height: 200px;
-	width: 350px;
+	width: 300px;
 	background-image: url("Images/logoDarkLight.png");
 	background-size: contain;
 	background-position: top center;
@@ -137,7 +189,7 @@ a {
 .libButton {
 	color: #232529;
 	background-color: #0FB686;
-	margin-left: 75px;
+	margin-left: 50px;
 }
 
 .libButton:hover,
@@ -146,18 +198,18 @@ a {
   transform: translateY(-0.25em);
 }
 
-.industrial {
+#industrial {
 	background-image: url("Images/speakerFinal.png");
 	background-size: contain;
 }
 
 .indText {
 	color: #232529;
-	width: 500px;
+	width: 420px;
 	height: 200px;
 	float: right;
-	padding-top: 72vh;
-	padding-right: 10px;
+	padding-top: 50vh;
+	padding-right: 0px;
 }
 
 .indButton {
@@ -171,7 +223,7 @@ a {
   transform: translateY(-0.25em);
 }
 
-.disc {
+#disc {
 	background-color: #52B6B9;
 	background-image: linear-gradient(90deg, #52B6B9, #73F0C0);
 	background-size: cover;
@@ -182,24 +234,27 @@ a {
 	background-image: url("Images/Copy of Logo whitescale.png");
 	background-size: contain;
 	background-repeat: no-repeat;
-	background-position: center;
-	width: 450px;
+	background-position: top center;
+	width: 600px;
 	height: 300px;
-	margin-left: 5vw;
+	position: absolute;
+	top: 3600px;
+	left: 15vw;
 }
 
 .discText {
+	float: right;
 	padding-top: 15vh;
-	margin-left: 50vw;
-	height: 300px;
-	width: 500px;
+	margin-right: 5vw;
+	height: 200px;
+	width: 400px;
 	color: #000000;
 }
 
 .discButton {
 	background-color: rgb(229,244,241);
 	color: #000000;
-	margin-left: 150px;
+	margin-left: 100px;
 }
 
 .discButton:hover,
@@ -208,7 +263,7 @@ a {
   transform: translateY(-0.25em);
 }
 
-.dsgn308 {
+#dsgn308 {
 	background-image: url("Images/dsgn308.JPG");
 	background-size: cover;
 	margin-top: 0vh;
