@@ -8,22 +8,29 @@
 	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
 </head>
 <body>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 <script src="main.js"></script>
 <!-- Apple Music Account: https://itunes.apple.com/profile/cmcgeehan5 -->
 
-<div id="topBar">
+<div id="topBar" class="container">
 	<div class="leftBar">
 		<ul>
 			<li><a class="small">Conor</a></li>
 		</ul>
 	</div>
 	<div class="rightBar">
+		<ul class="nav">
+			<li id="home" class="active"><a class="small" href="main.html#home">Home</a></li>
+			<li id="libellum"><a class="small" href="main.html#libellum">Libellum</a></li>
+			<li id="dsgn308"><a class="small" href="main.html#dsgn308">Ambidesk</a></li>
+			<li id="industrial"><a class="small" href="main.html#industrial">Industrial</a></li>
+			<li id="disc"><a class="small" href="main.html#disc">DISC</a></li>
+		</ul>
+	</div>
+	<div class="socialLinks">
 		<ul>
-			<li><a class="small" href="main.html#home">Home</a></li>
-			<li><a class="small" href="main.html#libellum">Libellum</a></li>
-			<li><a class="small" href="main.html#dsgn308">Ambidesk</a></li>
-			<li><a class="small" href="main.html#industrial">Industrial</a></li>
-			<li><a class="small" href="main.html#disc">DISC</a></li>
+			<li><a class="fab fa-linkedin-in" href="https://www.linkedin.com/in/conormcgeehan/"></a></li>
+		</ul>
 		<!--
 		<ul id="socialLinks">
 			<li><a class="fab fa-facebook-f" href="https://www.facebook.com/conor.mcgeehan.37/"></a></li>
@@ -33,9 +40,9 @@
 	</div>
 </div>
 
-<div class="section" id="myself">
-	<div id="home"></div>
-	<div class="mainText">
+<div id="home" class="container">
+	<div class="introIMG"></div>
+	<div class="introText">
 		<h1>Conor McGeehan</h1>
 		<p>I am driven by people; to understand them and design disruptive systems, products and experiences to help them. I am a senior at Northwestern University seeking roles in UX, product design product management.</p>
 	</div>
@@ -54,7 +61,7 @@
 
 <div class="section" id="dsgn308">
 	<div id="sectionText" class="prodDsgnText">
-		<h3 style="margin-top: 0px;">Product Design</h3>
+		<h4 style="margin-top: 0px;">Ambidesk</h4>
 		<h5 style="margin-top: 2px;">Undergraduate - Northwestern University</h5>
 		<div id="button" class="prodDsgnButton">
 			<a>Case Study<a>
@@ -64,7 +71,6 @@
 
 <div class="section" id="industrial">
 	<div id="sectionText" class="indText">
-		
 		<h3>Industrial Design</h3>
 		<h5 style="margin-top: 2px;">Undergraduate - Northwestern University</h5>
 		<div id="button" class="indButton">

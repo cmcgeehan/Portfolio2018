@@ -6,7 +6,7 @@ h1, h2, h3, h4, h5, h6, p {
 	-webkit-font-smoothing: antialiased;
 }
 
-h1, h3, h6 {
+h1, h3, h4, h6 {
 	font-family: montserrat;
 }
 
@@ -20,7 +20,7 @@ h1 {
 	font-size: 56px;
 }
 
-h3 {
+h3, h4 {
 	font-size: 36px;
 	font-weight: 500;
 	margin-top: 0px;
@@ -28,10 +28,7 @@ h3 {
 }
 
 h4 {
-	font-family: Roboto;
-	font-weight: 700;
-	font-size: 80px;
-	margin-bottom: 0px;
+	color: white;
 }
 
 h5 {
@@ -54,41 +51,68 @@ a {
 	display:table-cell;
 	vertical-align: middle;
 	font-size: 24px;
-	font-weight: 500;
 	margin: 0px;
+	/*color: #010400;
+	*/
+}
+
+.nav a {
+	color: #010400;
+}
+
+a.small:link {
+	text-decoration: none;
+}
+
+li.active {
+	color: #084887;
+	text-decoration: none;
+	font-weight: bolder;
 }
 
 a.small {
 	font-size: 14px;
 }
 
+.container {
+	display: flex;
+}
+
+.container > div {
+	flex: 1;
+}
+
 #topBar {
-	display: table;
 	top: 0;
 	left: 0;
 	position: fixed;
 	margin-top: 0;
-	height: 35px;
+	height: 40px;
 	background-color: white;
 	margin-bottom: 0;
 }
 
 .leftBar {
 	display: inline-block;
-	width: 35vw;
+	width: 10vw;
 }
 
 .rightBar {
 	right: 0;
-	width: 65vw;
+	width: 80vw;
+	float: left;
+}
+
+
+.socialLinks li  {
 	float: right;
 }
 
-/*
-#socialLinks li  {
-	float: right;
+.socialLinks a {
+	text-decoration: none;
+	color: #010400;
 }
-*/
+
 
 ul {
 	list-style: none;
@@ -102,8 +126,35 @@ ul {
 
 li {
 	display: inline;
-	padding-right: 25px;
+	margin-right: 25px;
+	height: 15px;
+	font-weight: 500;
+	color: #010400;
 }
+
+#home.container {
+	margin-top: 35px;
+	margin-left: 10vw;
+	margin-bottom: -100px;
+}
+
+.introIMG {
+	background-image: url("Images/pictureOfMe.jpg");
+	background-size: cover;
+	background-position: top center;
+	background-repeat: no-repeat;
+	width: 40vw;
+	height: 98vh;
+}
+
+.introText {
+	padding-top: 30vh;
+	width: 25vw;
+	height: 98vh;
+	text-align: left;
+	margin-left: 5vw;
+}
+
 
 .section {
 	height: 724px;
@@ -116,6 +167,7 @@ li {
 	margin-left: 10vw;
 	margin-top: 10vh;
 	margin-bottom: 10vh;
+	border-top: 55px solid white;
 	/* Note: the backgrounds currently don't scale appropriately with the rest of the screen */
 	background-repeat: no-repeat;
 }
@@ -141,23 +193,21 @@ li {
 	width: 200px;
 	height: 50px;
 	display: table;
-	border-radius: 0px;
+	font-weight: 500;
+	border-radius: 2px;
+	box-shadow: 4px 4px 4px rgba(0,0,0,.5);
 }
 
-#myself {
-	left: 0px;
-	top: 0px;
+#button:hover {
+	box-shadow: 8px 8px 4px rgba(0,0,0,.5);
 }
 
-.mainText {
-	padding-top: 30vh;
-	margin-left: 45vw;
-	width: 35vw;
-	height: 100vh;
-	text-align: left;
+#button:active {
+	box-shadow: 1px 1px 0px rgba(0,0,0,.5);
+	transform: translateY(0.25em);
 }
 
-#libellum {
+.section#libellum {
 	background-color: #232529;
 	background-image: linear-gradient(60deg, #232529, #393E44);
 	background-size: cover;
@@ -198,13 +248,13 @@ li {
   transform: translateY(-0.25em);
 }
 
-#industrial {
+.section#industrial {
 	background-image: url("Images/speakerFinal.png");
 	background-size: contain;
 }
 
 .indText {
-	color: #232529;
+	color: #010400;
 	width: 420px;
 	height: 200px;
 	float: right;
@@ -223,7 +273,7 @@ li {
   transform: translateY(-0.25em);
 }
 
-#disc {
+.section#disc {
 	background-color: #52B6B9;
 	background-image: linear-gradient(90deg, #52B6B9, #73F0C0);
 	background-size: cover;
@@ -238,7 +288,7 @@ li {
 	width: 600px;
 	height: 300px;
 	position: absolute;
-	top: 3600px;
+	top: 4200px;
 	left: 15vw;
 }
 
@@ -263,7 +313,7 @@ li {
   transform: translateY(-0.25em);
 }
 
-#dsgn308 {
+.section#dsgn308 {
 	background-image: url("Images/dsgn308.JPG");
 	background-size: cover;
 	margin-top: 0vh;
@@ -274,13 +324,13 @@ li {
 	margin-right: 30px;
 	height: 300px;
 	width: 450px;
-	color: #FFEC00;
+	color: white;
 	float: right;
 }
 
 .prodDsgnButton {
-	background-color: #FFEC00;
-	color: #000000;
+	background-color: rgb(122,152,180);
+	color: white;
 	margin-left: 106px;
 }
 
@@ -295,40 +345,66 @@ li {
   /* DSGN 320 Page */
 
 
-#sectionHeadImg {
+.splashBackground {
 	padding-top: 30px;
 	height: 100vh;
 	width: 100vw;
 }
 
-.Dsgn320 {
+.splashBackground#dsgn320 {
 	background-image: url("Images/speakerFinalHalf.jpg");
 	background-size: contain;
 	background-repeat: no-repeat;
 }
 
-#headText {
-	float: right;
+.splashText {
 	height: 300px;
-	width: 500px;
-	margin-top: -250px;
-	margin-right: 30px;
-	color: #000000;
+	width: 100vw;
 
+}
+
+.splashText#dsgn320 {
+	text-align: center;
+	margin-top: -250px;
+	color: #000000;
+}
+
+
+.splash {
+	margin-top: 35px;
+}
+
+.mainText {
+	padding-top: 0;
+	margin-left: 25vw;
+	width: 50vw;
+	height: 300px;
+	text-align: center;
+	word-wrap: normal;
+}
+
+.gallery {
 }
 
 
 
+.imageThree {
+	width: 33vw;
+	height: 33vw;
+	background-size: contain;
+	background-color: white;
+	background-position: center center;
+	background-repeat: no-repeat;
+	color: transparent;
+	text-align: center;
+	line-height: 33vw;
+}
 
-
-
-
-
-
-
-
-
-
+.imageThree:hover {
+	color: black;
+	text-shadow: 2px 2px rgba(0,0,0,.5);
+	filter: blur(5px);
+}
 
 
 
