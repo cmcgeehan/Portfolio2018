@@ -90,6 +90,7 @@ a.small {
 	height: 40px;
 	background-color: white;
 	margin-bottom: 0;
+	width: 100vw;
 }
 
 .leftBar {
@@ -217,7 +218,7 @@ li {
 	width: 750px;
 	height: 400px;
 	margin-left: 35vw;
-	background-image: url("Images/laptopImg.png");
+	background-image: url("Images/libLaptop.png");
 	background-repeat: no-repeat;
 	background-size: 75%;
 	background-position: bottom center;
@@ -330,7 +331,7 @@ li {
 
 .prodDsgnButton {
 	background-color: rgb(122,152,180);
-	color: white;
+	color: #010400;
 	margin-left: 106px;
 }
 
@@ -342,36 +343,35 @@ li {
 
 
 
-  /* DSGN 320 Page */
+
+/*			General Page Setup			*/
+
+
 
 
 .splashBackground {
-	padding-top: 30px;
+	height: 98vh;
+	width: 100vw;
+	position: absolute;
+	top: 40px;
+	left: 0;
+}
+
+.splashText {
+	position: absolute;
+	height: 300px;
+	width: 100vw;
+}
+
+.splash {
+	position: relative;
 	height: 100vh;
 	width: 100vw;
 }
 
-.splashBackground#dsgn320 {
-	background-image: url("Images/speakerFinalHalf.jpg");
-	background-size: contain;
-	background-repeat: no-repeat;
-}
-
-.splashText {
-	height: 300px;
-	width: 100vw;
-
-}
-
-.splashText#dsgn320 {
-	text-align: center;
-	margin-top: -250px;
-	color: #000000;
-}
-
-
-.splash {
-	margin-top: 35px;
+.splashOverlay {
+	position: absolute;
+	background-repeat: none;
 }
 
 .mainText {
@@ -384,33 +384,90 @@ li {
 }
 
 .gallery {
-}
 
+}
 
 
 .imageThree {
 	width: 33vw;
 	height: 33vw;
+	color: transparent;
+	text-align: center;
+	position: relative;
+}
+
+.pic {
+	display: block;
 	background-size: contain;
 	background-color: white;
 	background-position: center center;
 	background-repeat: no-repeat;
-	color: transparent;
-	text-align: center;
-	line-height: 33vw;
+	width: 100%;
+	height: 100%;
+}
+
+.galleryTextHolder {
+	position: absolute;
+	top: 45%;
+	left: 40%;
+	height: 20px;
+	width: 50px;
+	line-height: 20px;
+}
+
+.pic:hover {
+	filter: blur(5px);
 }
 
 .imageThree:hover {
 	color: black;
-	text-shadow: 2px 2px rgba(0,0,0,.5);
-	filter: blur(5px);
+}
+
+
+/*			DSGN 320			*/
+
+.splashBackground#dsgn320 {
+	background-image: url("Images/speakerFinalHalf.jpg");
+	background-size: contain;
+	background-repeat: no-repeat;
 }
 
 
 
+.splashText#dsgn320 {
+	text-align: center;
+	color: #000000;
+	top: 80%;
+}
 
 
 
+/*			Libellum page 			*/
+
+
+
+
+.splashBackground#lib {
+	background-image: linear-gradient(60deg, #232529, #393E44);
+}
+
+
+.splashText#lib {
+	color: white;
+	text-align: center;
+	top: 80%;
+}
+
+.splashOverlay#lib {
+	background-image: url("Images/libLaptop.png");
+	background-repeat: no-repeat;
+	background-position: center center;
+	background-size: contain;
+	top: 20%;
+	width: 50vw;
+	height: 50vh;
+	left: 25vw;
+}
 
 
 
