@@ -59,8 +59,7 @@ window.onscroll = function(){myScroll()};
 function myScroll() {
   if(Scrolling == false) {
     var storeHash;
-    console.log($(document).scrolltop());
-    if($(document).scrollTop() >= $('.section#home').position().top) {storeHash = 'home'};
+    if($(document).scrollTop() >= $('.container#home').position().top) {storeHash = 'home'};
     if($(document).scrollTop() >= $('.section#libellum').position().top) {storeHash = 'libellum'};
     if($(document).scrollTop() >= $('.section#dsgn308').position().top) {storeHash = 'dsgn308'};
     if($(document).scrollTop() >= $('.section#industrial').position().top) {storeHash = 'industrial'};

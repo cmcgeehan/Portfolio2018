@@ -91,6 +91,7 @@ a.small {
 	background-color: white;
 	margin-bottom: 0;
 	width: 100vw;
+	z-index: 3;
 }
 
 .leftBar {
@@ -355,23 +356,27 @@ li {
 	position: absolute;
 	top: 40px;
 	left: 0;
+	z-index: 1;
 }
 
 .splashText {
 	position: absolute;
 	height: 300px;
 	width: 100vw;
+	z-index: 2;
 }
 
 .splash {
 	position: relative;
 	height: 100vh;
 	width: 100vw;
+	z-index: 2;
 }
 
 .splashOverlay {
 	position: absolute;
 	background-repeat: none;
+	z-index: 2;
 }
 
 .mainText {
@@ -413,6 +418,7 @@ li {
 	height: 20px;
 	width: 50px;
 	line-height: 20px;
+	z-index: 2;
 }
 
 .pic:hover {
