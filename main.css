@@ -289,15 +289,13 @@ li {
 	background-position: top center;
 	width: 600px;
 	height: 300px;
-	position: absolute;
-	top: 4200px;
-	left: 15vw;
+	margin-left: 20px;
 }
 
 .discText {
-	float: right;
+	float: left;
 	padding-top: 15vh;
-	margin-right: 5vw;
+	margin-left: 45vw;
 	height: 200px;
 	width: 400px;
 	color: #000000;

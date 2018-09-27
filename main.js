@@ -13,8 +13,11 @@ $(document).ready(function(){
       event.preventDefault();
 
       // Store hash
-      var hash = ".section" + this.hash;
+      if(this.hash == "#home") {var hash = ".container" + this.hash;}
+      else {var hash = ".section" + this.hash;}
       //console.log(hash);
+      console.log(hash);
+      console.log($(hash).offest);
       var dist = $(hash).offset().top;
 
       //console.log($(hash).offset().top);
