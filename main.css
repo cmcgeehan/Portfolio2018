@@ -22,7 +22,7 @@ h1 {
 
 h3, h4 {
 	font-size: 36px;
-	font-weight: 500;
+	font-weight: 400;
 	margin-top: 0px;
 	margin-bottom: 0px;
 }
@@ -35,7 +35,9 @@ h5 {
 	font-size: 24px;
 }
 
-
+li p {
+	font-size: 16px;
+}
 
 p {
 	font-size: 18px;
@@ -105,6 +107,9 @@ a.small {
 	float: left;
 }
 
+.socialLinks {
+	width: 10vw;
+}
 
 .socialLinks li  {
 	float: right;
@@ -116,7 +121,7 @@ a.small {
 }
 
 
-ul {
+ul.nav {
 	list-style: none;
 	top: 0;
 	height: 33px;
@@ -126,11 +131,23 @@ ul {
 	padding-right: 40px;
 }
 
+ul.vertical {
+	padding-right: 40px;
+}
+
+ul.vertical li {
+	padding-bottom: 0;
+	margin-bottom: -25px;
+}
+
 li {
 	display: inline;
+}
+
+ul.nav li{
+
 	margin-right: 25px;
 	height: 15px;
-	font-weight: 500;
 	color: #010400;
 }
 
@@ -473,6 +490,33 @@ li {
 	left: 25vw;
 }
 
+.informative {
+	width: 50%;
+	margin-left: 25%;
+	margin-top: 250px;
+	text-align: left;
+}
 
+.informative h3 {
+	padding-bottom: 25px;
+}
 
+.informative p {
+	line-height: 30px;
+}
 
+.caseStudyImg {
+	background-position: center center;
+	background-size: contain;
+	background-repeat: no-repeat;
+	width: 100%;
+	margin-top: 50px;
+}
+
+.caption p {
+	font-weight: 300;
+	font-style: italic;
+	font-size: 14px;
+	padding-top: 5px;
+	margin-top: 0;
+}
