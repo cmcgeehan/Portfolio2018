@@ -2,6 +2,10 @@ html {
 	scroll-behavior: smooth;
 }
 
+body {
+	margin-left: 0;
+}
+
 h1, h2, h3, h4, h5, h6, p {
 	-webkit-font-smoothing: antialiased;
 }
@@ -12,7 +16,14 @@ h1, h3, h4, h6 {
 
 h5, p {
 	font-family: "Source Sans Pro";
+}
+
+h5 {
 	font-weight: normal;
+}
+
+p {
+	font-weight: 300;
 }
 
 h1 {
@@ -493,7 +504,7 @@ ul.nav li{
 .informative {
 	width: 50%;
 	margin-left: 25%;
-	margin-top: 250px;
+	margin-top: 150px;
 	text-align: left;
 }
 
@@ -509,7 +520,6 @@ ul.nav li{
 	background-position: center center;
 	background-size: contain;
 	background-repeat: no-repeat;
-	width: 100%;
 	margin-top: 50px;
 }
 
@@ -519,4 +529,21 @@ ul.nav li{
 	font-size: 14px;
 	padding-top: 5px;
 	margin-top: 0;
+}
+
+.threes {
+	margin: 5px;
+}
+
+.full.caseStudyImg {
+	width: 100%;
+}
+
+.half.caseStudyImg {
+	margin-left: 25%;
+	width: 50%;
+}
+
+.caption.half {
+	margin-left: 25%;
 }
