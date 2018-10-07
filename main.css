@@ -69,6 +69,11 @@ a {
 	*/
 }
 
+b {
+	font-weight: bold;
+	text-decoration: none;
+}
+
 .nav a {
 	color: #010400;
 }
@@ -110,20 +115,37 @@ a.small {
 .leftBar {
 	display: inline-block;
 	width: 10vw;
+	position: fixed;
+	top: 0;
+	left: 0;
 }
 
 .rightBar {
-	right: 0;
-	width: 80vw;
+	width: 34vw;
 	float: left;
+	position: fixed;
+	top: 0;
+	left: 10vw;
+	margin-left: 23vw;
+	margin-right: 23vw;
 }
 
 .socialLinks {
 	width: 10vw;
+	position: fixed;
+	top: 0;
+	left: 90vw;
 }
-
+/*
 .socialLinks li  {
 	float: right;
+	marin-right: 25px;
+}
+*/
+.socialLinks ul {
+	margin-top: 0;
+	height: 40px;
+	line-height: 40px;
 }
 
 .socialLinks a {
@@ -237,6 +259,7 @@ ul.nav li{
 	transform: translateY(0.25em);
 }
 
+
 .section#libellum {
 	background-color: #232529;
 	background-image: linear-gradient(60deg, #232529, #393E44);
@@ -330,8 +353,11 @@ ul.nav li{
 }
 
 .discButton {
-	background-color: rgb(229,244,241);
-	color: #000000;
+/*	background-color: rgb(229,244,241);
+	color: #000000;*/
+
+	color: #7b7b7b;
+	background-color: transparent;
 	margin-left: 100px;
 }
 
@@ -357,8 +383,10 @@ ul.nav li{
 }
 
 .prodDsgnButton {
-	background-color: rgb(122,152,180);
-	color: #010400;
+/*	background-color: rgb(122,152,180);
+	color: #010400;*/
+	color: #CECECE;
+	background-color: transparent;
 	margin-left: 106px;
 }
 
@@ -409,13 +437,12 @@ ul.nav li{
 	padding-top: 0;
 	margin-left: 25vw;
 	width: 50vw;
-	height: 300px;
 	text-align: center;
 	word-wrap: normal;
 }
 
-.gallery {
-
+.gallery.button {
+	color: inherit;
 }
 
 
@@ -425,6 +452,11 @@ ul.nav li{
 	color: transparent;
 	text-align: center;
 	position: relative;
+}
+
+.container.two {
+	margin-left:20vw;
+	margin-right: 20vw;
 }
 
 .pic {
@@ -453,6 +485,20 @@ ul.nav li{
 
 .imageThree:hover {
 	color: black;
+}
+
+/*			Sturdy				*/
+.splashBackground#sturdy {
+	background-image: url('Images/sturdy.jpg');
+	background-size: contain;
+	background-repeat: no-repeat;
+	background-position: center;
+}
+
+.splashText#sturdy {
+	text-align: center;
+	color: #000000;
+	top: 80%;
 }
 
 
@@ -546,4 +592,14 @@ ul.nav li{
 
 .caption.half {
 	margin-left: 25%;
+}
+
+.footer {
+	width: 100vw;
+	height: 500px;
+}
+
+a.button {
+	text-decoration: none;
+	color: black;
 }
