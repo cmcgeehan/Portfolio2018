@@ -121,13 +121,28 @@ a.small {
 }
 
 .rightBar {
-	width: 34vw;
 	float: left;
 	position: fixed;
 	top: 0;
 	left: 10vw;
+}
+
+.rightBar#short {
+	width: 34vw;
 	margin-left: 23vw;
 	margin-right: 23vw;
+}
+
+.rightBar#long {
+	
+	width: 40vw;
+	margin: 0 20vw 0 20vw;
+	
+}
+
+.rightBar#four {
+	width: 20vw;
+	margin: 0 30vw 0 30vw;
 }
 
 .socialLinks {
@@ -513,6 +528,13 @@ ul.nav li{
 
 .splashBackground#sound {
 	background-image: url("Images/speakerFinalHalf.jpg");
+	background-size: contain;
+	background-repeat: no-repeat;
+	background-position: center;
+}
+
+.splashBackground#sound {
+	background-image: url("Images/Stop/preview.jpg");
 	background-size: contain;
 	background-repeat: no-repeat;
 	background-position: center;
