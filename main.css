@@ -533,11 +533,11 @@ ul.nav li{
 	background-position: center;
 }
 
-.splashBackground#sound {
-	background-image: url("Images/Stop/preview.jpg");
-	background-size: contain;
+.splashBackground#stop {
+	background-image: url("Images/industrial/Stop/preview.jpg");
+	background-size: 45%;
 	background-repeat: no-repeat;
-	background-position: center;
+	background-position: top;
 }
 
 .splashBackground#strap {
