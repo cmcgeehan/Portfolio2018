@@ -22,6 +22,11 @@ h5 {
 	font-weight: normal;
 }
 
+h6 {
+	font-size: 18px;
+	margin-bottom: 15px;
+}
+
 p {
 	font-weight: 300;
 }
@@ -61,12 +66,18 @@ body {
 
 a {
 	font-family: montserrat;
-	display:table-cell;
+	/*display:table-cell;*/
 	vertical-align: middle;
 	font-size: 24px;
 	margin: 0px;
 	/*color: #010400;
 	*/
+}
+
+a.inline {
+	font-family: "Source Sans Pro";
+	font-weight: 300;
+	font-size: 18px;
 }
 
 b {
@@ -90,6 +101,7 @@ li.active {
 
 a.small {
 	font-size: 14px;
+	display:table-cell;
 }
 
 .container {
@@ -133,30 +145,22 @@ a.small {
 	margin-right: 23vw;
 }
 
-.rightBar#long {
-	
-	width: 40vw;
-	margin: 0 20vw 0 20vw;
-	
-}
-
-.rightBar#four {
-	width: 20vw;
-	margin: 0 30vw 0 30vw;
-}
-
 .socialLinks {
 	width: 10vw;
 	position: fixed;
 	top: 0;
 	left: 90vw;
 }
-/*
-.socialLinks li  {
-	float: right;
-	marin-right: 25px;
+
+.informative#button {
+	background-color: #23f4bd;
+	margin-left: 40%;
+	margin-bottom: 100px;
+	line-height: 50px;
+	text-decoration: none;
 }
-*/
+
+
 .socialLinks ul {
 	margin-top: 0;
 	height: 40px;
@@ -216,15 +220,20 @@ ul.nav li{
 
 .introText {
 	padding-top: 30vh;
-	width: 25vw;
+	width: 20vw;
 	height: 98vh;
 	text-align: left;
 	margin-left: 5vw;
 }
 
-
-.section {
+a.section {
 	height: 724px;
+	width: 80vw;
+}
+
+
+div.section {
+	height: 650px;
 	width: 80vw;
 	/* Testing
 	outline-width: 1px;
@@ -233,6 +242,7 @@ ul.nav li{
 	*/
 	margin-left: 10vw;
 	margin-top: 10vh;
+	margin-right: 10vw;
 	margin-bottom: 10vh;
 	border-top: 55px solid white;
 	/* Note: the backgrounds currently don't scale appropriately with the rest of the screen */
@@ -252,6 +262,16 @@ ul.nav li{
 */
 #sectionText {
 	text-align: center;
+}
+
+#sectionText p {
+	font-size: 16px;
+	font-weight: 400;
+}
+
+#sectionText h5 {
+	margin-bottom: 20px;
+	padding-bottom: 0;
 }
 
 #button {
@@ -274,6 +294,13 @@ ul.nav li{
 	transform: translateY(0.25em);
 }
 
+.white {
+	color: white;
+}
+
+.grey {
+	color: #B3C3C4;
+}
 
 .section#libellum {
 	background-color: #232529;
@@ -282,13 +309,9 @@ ul.nav li{
 }
 
 .laptopImg {
-	width: 750px;
-	height: 400px;
+	width: 500px;
 	margin-left: 35vw;
-	background-image: url("Images/libLaptop.png");
-	background-repeat: no-repeat;
-	background-size: 75%;
-	background-position: bottom center;
+	margin-top: 10vh;
 }
 
 .libText {
@@ -304,30 +327,50 @@ ul.nav li{
 	color: #CECECE;
 }
 
-.libButton {
-	color: #232529;
-	background-color: #0FB686;
-	margin-left: 50px;
-}
-
+/*
 .libButton:hover,
 .libButton:focus {
   box-shadow: 0 0.5em 0.5em -0.4em var(--hover);
   transform: translateY(-0.25em);
 }
+*/
 
 .section#industrial {
 	background-image: url("Images/speakerFinal.png");
 	background-size: contain;
 }
 
-.indText {
-	color: #010400;
+#sectionText.default {
 	width: 420px;
 	height: 200px;
 	float: right;
-	padding-top: 50vh;
+	padding-top: 70vh;
 	padding-right: 0px;
+}
+
+
+.footer {
+	width: 70vw;
+	margin-left: 15vw;
+	margin-top: 100px;
+	border-top: 2px solid black;
+	height: 250px;
+}
+
+.leftFoot {
+	margin-top: 25px;
+	width: 20vw;
+	color: black;
+	margin-left: 15vw;
+	display: inline-block;
+}
+
+#button.resume {
+	background-color: lightblue;
+}
+
+.rightFoot {
+	margin-top: 125px;
 }
 
 .indButton {
@@ -349,37 +392,22 @@ ul.nav li{
 }
 
 .discLogo {
-	background-image: url("Images/Copy of Logo whitescale.png");
 	background-size: contain;
 	background-repeat: no-repeat;
 	background-position: top center;
 	width: 600px;
 	height: 300px;
-	margin-left: 20px;
+	margin-left: 5vw;
+	margin-top: 10vh;
 }
 
 .discText {
 	float: left;
-	padding-top: 15vh;
+	padding-top: 20vh;
 	margin-left: 45vw;
 	height: 200px;
 	width: 400px;
 	color: #000000;
-}
-
-.discButton {
-/*	background-color: rgb(229,244,241);
-	color: #000000;*/
-
-	color: #7b7b7b;
-	background-color: transparent;
-	margin-left: 100px;
-}
-
-.discButton:hover,
-.discButton:focus {
-  box-shadow: 0 0.5em 0.5em -0.4em var(--hover);
-  transform: translateY(-0.25em);
 }
 
 .section#dsgn308 {
@@ -395,20 +423,6 @@ ul.nav li{
 	width: 450px;
 	color: white;
 	float: right;
-}
-
-.prodDsgnButton {
-/*	background-color: rgb(122,152,180);
-	color: #010400;*/
-	color: #CECECE;
-	background-color: transparent;
-	margin-left: 106px;
-}
-
-.prodDsgnButton:hover,
-.prodDsgnButton:focus {
-  box-shadow: 0 0.5em 0.5em -0.4em var(--hover);
-  transform: translateY(-0.25em);
 }
 
 
@@ -458,6 +472,7 @@ ul.nav li{
 
 .gallery.button {
 	color: inherit;
+	width: 100px;
 }
 
 
@@ -489,7 +504,7 @@ ul.nav li{
 	top: 45%;
 	left: 40%;
 	height: 20px;
-	width: 50px;
+	width: 200px;
 	line-height: 20px;
 	z-index: 2;
 }
@@ -545,6 +560,19 @@ ul.nav li{
 	background-size: contain;
 	background-repeat: no-repeat;
 	background-position: top;
+}
+
+.splashBackground#sting {
+	background-image: url("Images/industrial/Shoe/final.jpg");
+	background-repeat: no-repeat;
+	background-position: top;
+	background-size: 35%;
+}
+
+.splashBackground#disc {
+	background-image: url("Images/discLogo.png");
+	background-repeat: no-repeat;
+	background-position: center 30%;
 }
 
 .splashText#strap {
@@ -629,11 +657,6 @@ ul.nav li{
 
 .caption.half {
 	margin-left: 25%;
-}
-
-.footer {
-	width: 100vw;
-	height: 500px;
 }
 
 a.button {
