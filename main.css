@@ -64,6 +64,21 @@ body {
 	margin-top: 0px;
 }
 
+.nav {
+	list-style: none;
+	text-align: center;
+	margin: 0;
+}
+
+.nav li {
+	display: inline;
+}
+
+.nav a {
+	display: inline-block;
+	padding: 10px;
+}
+
 a {
 	font-family: montserrat;
 	/*display:table-cell;*/
@@ -132,19 +147,6 @@ a.small {
 	left: 0;
 }
 
-.rightBar {
-	float: left;
-	position: fixed;
-	top: 0;
-	left: 10vw;
-}
-
-.rightBar#short {
-	width: 34vw;
-	margin-left: 23vw;
-	margin-right: 23vw;
-}
-
 .socialLinks {
 	width: 10vw;
 	position: fixed;
@@ -172,36 +174,6 @@ a.small {
 	color: #010400;
 }
 
-
-ul.nav {
-	list-style: none;
-	top: 0;
-	height: 33px;
-	margin-top: 5px;
-	margin-bottom: 5px;
-	line-height: 33px;
-	padding-right: 40px;
-}
-
-ul.vertical {
-	padding-right: 40px;
-}
-
-ul.vertical li {
-	padding-bottom: 0;
-	margin-bottom: -25px;
-}
-
-li {
-	display: inline;
-}
-
-ul.nav li{
-
-	margin-right: 25px;
-	height: 15px;
-	color: #010400;
-}
 
 #home.container {
 	margin-top: 35px;
@@ -247,6 +219,7 @@ div.section {
 	border-top: 55px solid white;
 	/* Note: the backgrounds currently don't scale appropriately with the rest of the screen */
 	background-repeat: no-repeat;
+	position: relative;
 }
 /*
 #sectionTextBack {
@@ -265,7 +238,7 @@ div.section {
 }
 
 #sectionText p {
-	font-size: 16px;
+	font-size: 18px;
 	font-weight: 400;
 }
 
@@ -309,13 +282,14 @@ div.section {
 }
 
 .laptopImg {
-	width: 500px;
+	width: 40vw;
 	margin-left: 35vw;
-	margin-top: 10vh;
+	margin-top: 50px;
 }
 
 .libText {
-	margin-top: 25px;
+	position: absolute;
+	bottom: 0px;
 	margin-left: 10vw;
 	padding-top: 60px;
 	height: 200px;
@@ -336,7 +310,7 @@ div.section {
 */
 
 .section#industrial {
-	background-image: url("Images/speakerFinal.png");
+	background-image: url("Images/speakerFinalHalf.jpg");
 	background-size: contain;
 }
 
@@ -344,8 +318,20 @@ div.section {
 	width: 420px;
 	height: 200px;
 	float: right;
-	padding-top: 70vh;
 	padding-right: 0px;
+	margin-right: 5vw;
+}
+
+#sectionText.dsgn308 {
+	margin-top: 65vh;
+}
+
+#sectionText.industrial {
+	margin-top: 75vh;
+}
+
+#sectionText.disc {
+	margin-top: 10vh;
 }
 
 
@@ -399,11 +385,12 @@ div.section {
 	height: 300px;
 	margin-left: 5vw;
 	margin-top: 10vh;
+	margin-right: 40vw;
 }
 
 .discText {
 	float: left;
-	padding-top: 20vh;
+	padding-top: 20px;
 	margin-left: 45vw;
 	height: 200px;
 	width: 400px;
@@ -510,7 +497,7 @@ div.section {
 }
 
 .pic:hover {
-	filter: blur(5px);
+	filter: blur(50px);
 }
 
 .imageThree:hover {
