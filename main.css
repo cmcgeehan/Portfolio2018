@@ -457,18 +457,30 @@ div.section {
 	word-wrap: normal;
 }
 
-.gallery.button {
-	color: inherit;
-	width: 100px;
-}
-
 
 .imageThree {
 	width: 33vw;
 	height: 33vw;
-	color: transparent;
-	text-align: center;
 	position: relative;
+}
+
+.imageThree .content-overlay {
+  background: rgba(0,0,0,0.7);
+  position: absolute;
+  height: 99%;
+  width: 100%;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  opacity: 0;
+  -webkit-transition: all 0.4s ease-in-out 0s;
+  -moz-transition: all 0.4s ease-in-out 0s;
+  transition: all 0.4s ease-in-out 0s;
+}
+
+.imageThree:hover .content-overlay{
+  opacity: 1;
 }
 
 .container.two {
@@ -477,31 +489,37 @@ div.section {
 }
 
 .pic {
-	display: block;
-	background-size: contain;
-	background-color: white;
-	background-position: center center;
-	background-repeat: no-repeat;
-	width: 100%;
+	/*width: 100%;*/
+	background-position: center;
 	height: 100%;
 }
 
-.galleryTextHolder {
-	position: absolute;
-	top: 45%;
-	left: 40%;
-	height: 20px;
-	width: 200px;
-	line-height: 20px;
-	z-index: 2;
+.content-details {
+  position: absolute;
+  text-align: center;
+  padding-left: 1em;
+  padding-right: 1em;
+  width: 100%;
+  top: 50%;
+  left: 50%;
+  opacity: 0;
+  -webkit-transform: translate(-50%, -50%);
+  -moz-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  -webkit-transition: all 0.3s ease-in-out 0s;
+  -moz-transition: all 0.3s ease-in-out 0s;
+  transition: all 0.3s ease-in-out 0s;
+  color: white;
 }
 
-.pic:hover {
-	filter: blur(50px);
+.imageThree:hover .content-details{
+  top: 50%;
+  left: 50%;
+  opacity: 1;
 }
 
-.imageThree:hover {
-	color: black;
+.fadeIn-top{
+  top: 20%;
 }
 
 /*			Sturdy				*/
@@ -517,7 +535,11 @@ div.section {
 	color: #000000;
 	top: 80%;
 }
-
+.splashText#ambi {
+	text-align: center;
+	color: #000000;
+	top: 70%;
+}
 
 /*			DSGN 320			*/
 
@@ -560,6 +582,14 @@ div.section {
 	background-image: url("Images/discLogo.png");
 	background-repeat: no-repeat;
 	background-position: center 30%;
+}
+
+.splashBackground#ambi {
+	background-image: url("Images/dsgn308.jpg");
+	background-repeat: no-repeat;
+	background-position: center 30%;
+	width: 100%;
+	background-size: cover;
 }
 
 .splashText#strap {
