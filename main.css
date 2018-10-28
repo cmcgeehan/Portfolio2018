@@ -119,12 +119,17 @@ a.small {
 	display:table-cell;
 }
 
+ul.vertical {
+	padding-left:0;
+	margin-top: 25px;
+}
+
 .container {
 	display: flex;
 }
 
 .container > div {
-	flex: 1;
+	flex: 1 0 0%;
 }
 
 #topBar {
@@ -462,15 +467,15 @@ div.section {
 	width: 33vw;
 	height: 33vw;
 	position: relative;
+	/*object-fit: fill;*/
 }
 
 .imageThree .content-overlay {
   background: rgba(0,0,0,0.7);
   position: absolute;
-  height: 99%;
+  height: 100%;
   width: 100%;
-  left: 0;
-  top: 0;
+  background-position: center center;
   bottom: 0;
   right: 0;
   opacity: 0;
@@ -489,9 +494,17 @@ div.section {
 }
 
 .pic {
-	/*width: 100%;*/
-	background-position: center;
-	height: 100%;
+	object-position: center center;
+	overflow: hidden;
+}
+
+.pic.wide {
+	width: 33vw;
+	/*height: 33vw;*/
+}
+
+.pic.tall {
+	height: 33vw;
 }
 
 .content-details {
@@ -538,7 +551,7 @@ div.section {
 .splashText#ambi {
 	text-align: center;
 	color: #000000;
-	top: 70%;
+	top: 60%;
 }
 
 /*			DSGN 320			*/
@@ -655,9 +668,16 @@ div.section {
 	margin-top: 0;
 }
 
+.twos {
+	margin: 5px;
+	width: 50%;
+	height: 100%;
+	background-size: contain;	
+}
+
 .threes {
 	margin: 5px;
-	width: 100%;
+	width: 33%;
 	height: 100%;
 	background-size: contain;
 
