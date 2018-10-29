@@ -494,8 +494,10 @@ div.section {
 }
 
 .pic {
-	object-position: center center;
+	display: inline-block;
+	vertical-align: middle;
 	overflow: hidden;
+
 }
 
 .pic.wide {
@@ -506,6 +508,11 @@ div.section {
 .pic.tall {
 	height: 33vw;
 }
+/*
+.pic.sturdy {
+	margin-top: 25vh;
+}
+*/
 
 .content-details {
   position: absolute;
