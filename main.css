@@ -190,6 +190,7 @@ ul.vertical {
 	margin-top: 35px;
 	margin-left: 10vw;
 	margin-bottom: -100px;
+	margin-right: 10vw;
 }
 
 .introIMG {
@@ -197,7 +198,6 @@ ul.vertical {
 	background-size: cover;
 	background-position: top center;
 	background-repeat: no-repeat;
-	width: 40vw;
 	height: 98vh;
 }
 

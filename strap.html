@@ -6,9 +6,12 @@
 	<link href="https://fonts.googleapis.com/css?family=Heebo:700|Roboto:400,700" rel="stylesheet">
 		<link href="https://fonts.googleapis.com/css?family=Heebo:700|Montserrat:400,500,600,700" rel="stylesheet">
 	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
+	<link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
 </head>
 <body>
-<div id="topBar" class="container">
+
+
+<div id="topBar" class="container" data-aos="fade-down" data-aos-delay="50">
 	<div class="leftBar">
 		<ul class="nav">
 			<li><a class="small button" href="index.html">Conor</a></li>
@@ -17,8 +20,8 @@
 	<div class="rightBar" id="short">
 		<ul class="nav">
 			<li id="home"><a class="small" href="index.html#home">Home</a></li>
+			<li id="dsgn308"><a class="small" href="whatsNU.html">What's NU</a></li>
 			<li id="libellum"><a class="small" href="lib.html">Libellum</a></li>
-			<li id="dsgn308"><a class="small" href="ambidesk.html">Ambidesk</a></li>
 			<li id="industrial" class="active"><a class="small" href="dsgn320.html">Industrial</a></li>
 			<li id="disc"><a class="small" href="disc.html">DISC</a></li>
 		</ul>
@@ -92,4 +95,9 @@
 		</a>
 	</div>
 </div>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+  <script>
+    AOS.init();
+  </script>
 </body></html>

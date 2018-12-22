@@ -3,16 +3,16 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <head>
 	<link rel="stylesheet" type="text/css" href="main.css">
+	<link rel="stylesheet" type="text/css" href="animate.css">
 	<link href="https://fonts.googleapis.com/css?family=Heebo:700|Roboto:400,700" rel="stylesheet">
 		<link href="https://fonts.googleapis.com/css?family=Heebo:700|Montserrat:400,500,600,700" rel="stylesheet">
 	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
+	<link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
 </head>
 <body>
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-<script src="main.js"></script>
 <!-- Apple Music Account: https://itunes.apple.com/profile/cmcgeehan5 -->
 
-<div id="topBar" class="container">
+<div id="topBar" class="container" data-aos="fade-down" data-aos-delay="50">
 	<div class="leftBar">
 		<ul class="nav">
 			<li><a class="small button" href="index.html">Conor</a></li>
@@ -41,8 +41,8 @@
 </div>
 
 <div id="home" class="container">
-	<div class="introIMG"></div>
-	<div class="introText">
+	<div class="introIMG" data-aos="fade-right"></div>
+	<div class="introText" data-aos="fade-right">
 		<h1>Conor McGeehan</h1>
 		<p>I am driven by people; to understand them and design disruptive systems, products and experiences to help them. I am a senior at Northwestern University seeking roles in UX, product design and product management.</p>
 	</div>
@@ -50,19 +50,19 @@
 
 <a class="button section" href="whatsNU.html">
 	<div class="section" id="ux">
-		<div id="sectionText" class="white ux">
+		<div id="sectionText" class="white ux" data-aos="fade-left"">
 			<h4 style="margin-top: 0px;">What's NU</h4>
 			<h5 style="margin-top: 2px;">Undergraduate - Northwestern University</h5>
 			<p>Convenient Advertising for Busy College Students</p>
 		</div>
-		<img class="uxImg" src="Images/dsgn306/cover.png">
+		<img class="uxImg" data-aos="fade-left" src="Images/dsgn306/cover.png">
 	</div>
 </a>
 
 <a href="lib.html" class="button section">
 	<div class="section" id="libellum">
-		<img class="laptopImg" src="Images/libLaptop.png">
-		<div id="sectionText" class="libText">
+		<img class="laptopImg" data-aos="fade-right" src="Images/libLaptop.png">
+		<div id="sectionText" data-aos="fade-right" class="libText">
 			<h5>UX Associate - Fulcrum GT</h5>
 			<p>A new approach to legal financials</p>
 		</div>
@@ -72,8 +72,8 @@
 
 
 <a href="dsgn320.html" class="button section">
-	<div class="section" id="industrial">
-		<div id="sectionText" class="default industrial">
+	<div class="section" id="industrial" data-aos="fade-left">
+		<div id="sectionText" data-aos="fade-left" class="default industrial">
 			<h3>Industrial Design</h3>
 			<h5 style="margin-top: 2px;">Undergraduate - Northwestern University</h5>
 			<p>Rapid ideation through sketching</p>
@@ -83,8 +83,8 @@
 
 <a href="disc.html" class="button section">
 	<div class="section" id="disc">
-		<img src="Images/Copy of Logo whitescale.png" class="discLogo">
-		<div id="sectionText" class="disc default">
+		<img src="Images/Copy of Logo whitescale.png" data-aos="fade-right" class="discLogo">
+		<div id="sectionText" data-aos="fade-right" class="disc default">
 			<h3 style="margin-top: 0px;">DISC</h3>
 			<h5 style="margin-top: 2px;">Founder - Northwestern University</h5>
 			<p>A place where students' work can make an impact</p>
@@ -108,5 +108,11 @@
 	</div>
 </div>
 
+<script src="main.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+  <script>
+    AOS.init();
+  </script>
 </body>
 </html>

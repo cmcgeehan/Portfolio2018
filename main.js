@@ -62,6 +62,7 @@ window.onscroll = function(){myScroll()};
 function myScroll() {
   if(Scrolling == false) {
     var storeHash;
+
     if($(document).scrollTop() >= $('.container#home').position().top) {storeHash = 'home'};
     if($(document).scrollTop() >= $('.section#libellum').position().top) {storeHash = 'libellum'};
     if($(document).scrollTop() >= $('.section#dsgn308').position().top) {storeHash = 'dsgn308'};
