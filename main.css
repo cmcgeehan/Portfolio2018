@@ -124,6 +124,12 @@ ul.vertical {
 	margin-top: 25px;
 }
 
+.container.black {
+	background-color: black;
+	margin: 50px 0;
+	width: 100%;
+}
+
 .container {
 	display: flex;
 }
@@ -279,6 +285,25 @@ div.section {
 .grey {
 	color: #B3C3C4;
 }
+
+.section#ux {
+	background-color: black;
+}
+
+#sectionText.ux {
+	margin-top: 40vh;
+	width: 420px;
+	height: 200px;
+	margin-left: 12vw;
+	float: left;
+}
+
+.uxImg {
+	height: 600px;
+	margin-left: 100px;
+	margin-top: 25px;
+}
+
 
 .section#libellum {
 	background-color: #232529;
@@ -617,6 +642,15 @@ div.section {
 	color: #000000;
 	top: 85%;
 }
+
+
+.splashBackground#ux {
+	background-image: url("Images/dsgn306/splash.jpg");
+	background-size: 90vh;
+	background-repeat: no-repeat;
+	background-position: top center;
+}
+
 
 /*			Libellum page 			*/
 
