@@ -653,7 +653,7 @@ div.section {
 
 .splashBackground#e340 {
 	background-image: url("Images/entrep340/InnovateRender@2x.jpg");
-	background-size: 90vh;
+	background-size: 100vw;
 	background-repeat: no-repeat;
 	background-position: top center;
 }
