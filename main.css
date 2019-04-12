@@ -734,6 +734,7 @@ div.section {
 .full.caseStudyImg {
 	width: 50vw;
 	max-height: 100vh;
+	background-size: cover;
 }
 
 .half.caseStudyImg {
